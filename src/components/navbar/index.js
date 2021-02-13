@@ -1,5 +1,5 @@
-import React from "react";
-import { FaBars } from "react-icons/fa";
+import React from 'react';
+import { FaBars } from 'react-icons/fa';
 import {
     Nav,
     NavbarContainer,
@@ -10,33 +10,33 @@ import {
     NavLink,
     NavBtn,
     NavBtnLink,
-} from "./NavbarElements";
+} from './NavbarElements';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/">ganji</NavLogo>
-                    <MobileIcon>
+                    <NavLogo to='/'>ganji</NavLogo>
+                    <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLink to="about">About Us</NavLink>
+                            <NavLink to='about'>About Us</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="solutions">Solutions</NavLink>
+                            <NavLink to='solutions'>Solutions</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="signup">Sign Up</NavLink>
+                            <NavLink to='signup'>Sign Up</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="contact">Contact</NavLink>
+                            <NavLink to='contact'>Contact</NavLink>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/signin">Sign In</NavBtnLink>
+                        <NavBtnLink to='/signin'>Sign In</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

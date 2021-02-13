@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom"; //React router link to navigate to other page
-import { Link as LinkS } from "react-scroll"; //React scroll link to navigate within same page
+import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom'; //React router link to navigate to other page
+import { Link as LinkS } from 'react-scroll'; //React scroll link to navigate within same page
 
 export const Nav = styled.nav`
     background: #000;
@@ -36,7 +36,6 @@ export const NavLogo = styled(LinkR)`
     cursor: pointer;
     font-size: 1.5rem;
     align-items: center;
-    margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
 `;
@@ -47,6 +46,7 @@ export const MobileIcon = styled.div`
     @media screen and (max-width: 768px) {
         display: block;
         position: absolute;
+        z-index: 10;
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);

@@ -1,6 +1,7 @@
 import Navbar from '../components/navbar';
 import Sidebar from '../components/sidebar';
 import React, { useState } from 'react';
+import Hero from '../components/herosection';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +14,7 @@ const Home = () => {
         <>
             <Navbar toggle={toggle} />
             <Sidebar isOpen={isOpen} toggle={toggle} />
+            <Hero />
         </>
     );
 };

@@ -49,7 +49,6 @@ const InfoSection = ({
                                         duration={500}
                                         spy={true}
                                         exact='true'
-                                        dd
                                         offset={-60}
                                     >
                                         {buttonLabel}

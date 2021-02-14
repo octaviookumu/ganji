@@ -7,10 +7,10 @@ import {
     HeroTitle,
     HeroP,
     HeroBtnWrapper,
-    Button,
     ArrowForward,
     ArrowRight,
 } from './HeroElements';
+import { Button } from '../ButtonElements';
 import Video from '../../videos/video.mp4';
 
 const Hero = () => {
@@ -25,7 +25,7 @@ const Hero = () => {
             <HeroContainer>
                 <HeroBg>
                     <VideoBg
-                        autoplay
+                        autoPlay
                         loop
                         muted
                         src={Video}
@@ -43,8 +43,10 @@ const Hero = () => {
                             to='signup'
                             onMouseEnter={onHover}
                             onMouseLeave={onHover}
+                            primary='true'
+                            dark='true'
                         >
-                            Get started{' '}
+                            Get started
                             {hover ? <ArrowForward /> : <ArrowRight />}
                         </Button>
                     </HeroBtnWrapper>

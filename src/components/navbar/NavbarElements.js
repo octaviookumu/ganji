@@ -3,9 +3,9 @@ import { Link as LinkR } from 'react-router-dom'; //React router link to navigat
 import { Link as LinkS } from 'react-scroll'; //React scroll link to navigate within same page
 
 export const Nav = styled.nav`
-    background: #000;
+    background: ${({ scrollNav })=>( scrollNav ? '#000' : 'transparent')};
     height: 80px;
-    margin-top: -60px;
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;

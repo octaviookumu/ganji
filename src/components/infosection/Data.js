@@ -15,3 +15,39 @@ export const homeObjOne = {
     primary: true,
     darkText: false,
 };
+
+export const homeObjTwo = {
+    id: 'solutions',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Unlimited Access',
+    headline: 'Log in to your account at any time',
+    description:
+        'We have you covered no matter where you are located. All you need is an internet connection and a phone or computer.',
+    buttonLabel: 'Learn More',
+    imgStart: true,
+    img: require('../../images/svg-2.svg').default,
+    alt: 'A Piggy bank',
+    dark: false,
+    primary: false,
+    darkText: true,
+};
+
+export const homeObjThree = {
+    id: 'signup',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Join Our Team',
+    headline: 'Creating an account is extremely easy',
+    description:
+        "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go",
+    buttonLabel: 'Start Now',
+    imgStart: false,
+    img: require('../../images/svg-3.svg').default,
+    alt: 'Paper',
+    dark: false,
+    primary: false,
+    darkText: true,
+};
